@@ -1,0 +1,150 @@
+body {
+    position: relative;
+    background-color: pink;
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    width: 100vw;
+    height: 10vh;
+}
+
+#navbar {
+    height: 100%;
+    background-color:grey;
+}
+
+#navlist {
+    list-style-type: none;
+
+}
+
+.navitem {
+    float: right;
+    
+}
+
+.navitem a {
+    /*
+    Note that <a> is inline by default, whereas li is block.
+    The settings below can actually be copied to .navitem instead.
+    But there is a difference.
+    With the settings here, clicking on the green area is equivalent to clicking on the nearest link.
+    However, if the settings are placed in .navitem,
+    I would have to click precisely on the hyperlink.
+    */
+    display: block;
+    background-color: green;
+    margin: 0px;
+    padding: 8px 15px;
+}
+
+main {
+    width: 75%;
+    height: 40%;
+    background-color: silver;
+    margin: 10% auto;
+}
+
+.logo {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 10% auto;
+}
+
+#search-bar {
+    display: block;
+    width: 50%;
+    height: 30px;
+    margin: 10% auto;
+    border-radius: 5%;
+
+}
+
+#button-group {
+    background-color: pink;
+    width: auto;
+    height: auto;
+    margin: auto auto;
+    /* center aligns inline child elements */
+    text-align: center;
+}
+
+button {
+    display: inline-block;
+    background-color: lightgray;
+    color: darkgray;
+
+}
+
+#languages {
+    background-color: white;
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+}
+
+.footer-row {
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+    height: 50%;
+    background-color: silver;
+    border-color: gray;
+}
+
+#region {
+    padding: 20px;
+    text-align: left;
+}
+
+#footer-list {
+    position: relative;
+    height: 100%;
+    width: 75%;
+    float: left;
+    /*background-color: green;*/
+}
+
+.footer-item {
+    position: relative;
+    float: left;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    height: 100%;
+    width: 24%;
+}
+
+.footer-item a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#privacy {
+    position: relative;
+    height: 100%;
+    width: 100px;
+    float: right;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+#privacy-tag {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
